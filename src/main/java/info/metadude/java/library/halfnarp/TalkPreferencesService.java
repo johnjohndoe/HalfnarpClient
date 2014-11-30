@@ -1,10 +1,10 @@
 package info.metadude.java.library.halfnarp;
 
-import java.util.List;
-
 import info.metadude.java.library.halfnarp.model.TalkPreferencesResponse;
 import retrofit.Callback;
 import retrofit.http.GET;
+
+import java.util.List;
 
 public interface TalkPreferencesService {
 
