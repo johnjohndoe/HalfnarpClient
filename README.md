@@ -19,6 +19,10 @@ TalkPreferencesService service = ApiModule.getTalkPreferencesService();
 service.getTalkPreferencesResponse(new Callback<List<TalkPreferencesResponse>>() {
     // Handle response
 });
+
+service.postTalkPreferences(new Callback<PostSuccessResponse>() {
+   // Handle post response
+});
 ```
 
 Make sure to define the following `packagingOptions` in the  `build.gradle` of you app.
