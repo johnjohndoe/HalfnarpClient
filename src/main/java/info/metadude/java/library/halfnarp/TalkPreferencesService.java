@@ -10,6 +10,6 @@ public interface TalkPreferencesService {
 
     @GET("/-/talkpreferences")
     public void getTalkPreferencesResponse(
-            Callback<List<TalkPreferencesResponse>> sessionsResponseCallback);
+            Callback<List<TalkPreferencesResponse>> talkPreferencesResponseCallback);
 
 }
