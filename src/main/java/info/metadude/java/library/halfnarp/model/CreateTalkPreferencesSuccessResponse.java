@@ -1,19 +1,35 @@
 package info.metadude.java.library.halfnarp.model;
 
-import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import com.fasterxml.jackson.annotation.JsonAnySetter;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class UpdateSuccessResponse extends UpdateResponse {
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class CreateTalkPreferencesSuccessResponse extends CreateResponse {
 
+    @JsonProperty("update_url")
+    private String updateUrl;
     @JsonProperty("uid")
     private String uid;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * @return The updateUrl
+     */
+    @JsonProperty("update_url")
+    public String getUpdateUrl() {
+        return updateUrl;
+    }
+
+    /**
+     * @param updateUrl The update_url
+     */
+    @JsonProperty("update_url")
+    public void setUpdateUrl(String updateUrl) {
+        this.updateUrl = updateUrl;
+    }
 
     /**
      * @return The uid
@@ -43,7 +59,8 @@ public class UpdateSuccessResponse extends UpdateResponse {
 
     @Override
     public String toString() {
-        return "uid = " + uid;
+        return "updateUrl = " + updateUrl + ", " +
+                "uid = " + uid;
     }
 
 }

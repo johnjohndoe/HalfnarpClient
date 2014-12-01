@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PostError {
+public class CreateTalkPreferencesError {
 
     @JsonProperty("location")
     private String location;

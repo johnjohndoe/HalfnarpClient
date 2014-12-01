@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PostErrorResponse extends PostResponse {
+public class CreateTalkPreferencesErrorResponse extends CreateResponse {
 
     @JsonProperty("status")
     private String status;
     @JsonProperty("errors")
-    private List<PostError> errors = new ArrayList<PostError>();
+    private List<CreateTalkPreferencesError> errors = new ArrayList<CreateTalkPreferencesError>();
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -37,7 +37,7 @@ public class PostErrorResponse extends PostResponse {
      * @return The errors
      */
     @JsonProperty("errors")
-    public List<PostError> getErrors() {
+    public List<CreateTalkPreferencesError> getErrors() {
         return errors;
     }
 
@@ -45,7 +45,7 @@ public class PostErrorResponse extends PostResponse {
      * @param errors The errors
      */
     @JsonProperty("errors")
-    public void setErrors(List<PostError> errors) {
+    public void setErrors(List<CreateTalkPreferencesError> errors) {
         this.errors = errors;
     }
 
