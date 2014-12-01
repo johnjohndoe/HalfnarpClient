@@ -17,11 +17,15 @@ The library can be accessed via the `ApiModule` class.
 ```java
 TalkPreferencesService service = ApiModule.getTalkPreferencesService();
 service.getTalkPreferencesResponse(new Callback<List<TalkPreferencesResponse>>() {
-    // Handle response
+    // Handle get response
 });
 
 service.postTalkPreferences(new Callback<PostSuccessResponse>() {
    // Handle post response
+});
+
+service.updateTalkPreferences(new Callback<UpdateSuccessResponse>() {
+   // Handle update response
 });
 ```
 
