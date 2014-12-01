@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import info.metadude.java.library.halfnarp.TalkIdsSerializer;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,7 +24,7 @@ public class TalkIds {
         mTalkIds.add(talkId);
     }
 
-    public void add(List<Integer> talkIds) {
+    public void add(Collection<Integer> talkIds) {
         mTalkIds.addAll(talkIds);
     }
 
@@ -35,7 +36,7 @@ public class TalkIds {
         return mTalkIds.size();
     }
 
-    public List<Integer> getTalkIds() {
+    public Collection<Integer> getTalkIds() {
         return new ArrayList<>(mTalkIds);
     }
 
