@@ -20,7 +20,8 @@ service.getTalkPreferencesResponse(new Callback<List<TalkPreferencesResponse>>()
     // Handle response
 });
 
-service.postTalkPreferences(new Callback<PostSuccessResponse>() {
+TalkIds talkIds = // set your TalkIds
+service.postTalkPreferences(talkIds,new Callback<PostSuccessResponse>() {
    // Handle post response
 });
 ```
