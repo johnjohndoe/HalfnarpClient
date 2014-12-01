@@ -2,6 +2,7 @@ package info.metadude.java.library.halfnarp;
 
 import java.util.List;
 
+import info.metadude.java.library.halfnarp.model.GetTalkPreferencesSuccessResponse;
 import info.metadude.java.library.halfnarp.model.GetTalksResponse;
 import info.metadude.java.library.halfnarp.model.PostSuccessResponse;
 import info.metadude.java.library.halfnarp.model.TalkIds;
@@ -33,5 +34,12 @@ public interface TalkPreferencesService {
             @Path("uniqueId") String uniqueId,
             @Body TalkIds talkIds,
             Callback<UpdateSuccessResponse> updateResponseCallback);
+
+    // TODO: Handle getTalkPreferences error response
+
+    @GET("/-/talkpreferences/{uniqueId}")
+    public void getTalkPreferences(
+            @Path("uniqueId") String uniqueId,
+            Callback<GetTalkPreferencesSuccessResponse> getTalkPreferencesResponseCallback);
 
 }
