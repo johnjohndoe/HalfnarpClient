@@ -19,7 +19,9 @@ public interface TalkPreferencesService {
     // TODO: Handle post error response
 
     @POST("/-/talkpreferences")
-    public void postTalkPreferences(@Body TalkIds talkIds, Callback<PostSuccessResponse> postResponseCallback);
+    public void postTalkPreferences(
+            @Body TalkIds talkIds,
+            Callback<PostSuccessResponse> postResponseCallback);
 
     // TODO: Add PUT to update talk preferences
 
