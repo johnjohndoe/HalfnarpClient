@@ -2,9 +2,9 @@ package info.metadude.java.library.halfnarp;
 
 import java.util.List;
 
+import info.metadude.java.library.halfnarp.model.GetTalksResponse;
 import info.metadude.java.library.halfnarp.model.PostSuccessResponse;
 import info.metadude.java.library.halfnarp.model.TalkIds;
-import info.metadude.java.library.halfnarp.model.TalkPreferencesResponse;
 import info.metadude.java.library.halfnarp.model.UpdateSuccessResponse;
 import retrofit.Callback;
 import retrofit.http.Body;
@@ -16,8 +16,8 @@ import retrofit.http.Path;
 public interface TalkPreferencesService {
 
     @GET("/-/talkpreferences")
-    public void getTalkPreferencesResponse(
-            Callback<List<TalkPreferencesResponse>> talkPreferencesResponseCallback);
+    public void getTalks(
+            Callback<List<GetTalksResponse>> getTalksResponseCallback);
 
     // TODO: Handle post error response
 
