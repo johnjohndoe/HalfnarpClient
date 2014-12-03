@@ -16,7 +16,7 @@ public class ApiModule {
 
     public static TalkPreferencesService getTalkPreferencesService() {
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://halfnarp.events.ccc.de")
+                .setEndpoint(TalkPreferencesService.SERVICE_END_POINT)
                 .setConverter(new JacksonConverter(provideObjectMapper()))
                 .setLogLevel(RestAdapter.LogLevel.HEADERS)
                 .build();

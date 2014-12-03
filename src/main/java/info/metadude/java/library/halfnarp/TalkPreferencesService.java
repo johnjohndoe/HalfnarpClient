@@ -16,6 +16,9 @@ import retrofit.http.Path;
 
 public interface TalkPreferencesService {
 
+    public static final String SERVICE_END_POINT =
+            "http://halfnarp.events.ccc.de";
+
     @GET("/-/talkpreferences")
     public void getTalks(
             Callback<List<GetTalksResponse>> getTalksResponseCallback);
