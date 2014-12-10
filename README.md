@@ -1,4 +1,4 @@
-[![VersionEye](https://www.versioneye.com/user/projects/548851f9746eb5c4a4000273/badge.svg)](https://www.versioneye.com/user/projects/548851f9746eb5c4a4000273)
+[![Build Status](https://travis-ci.org/johnjohndoe/HalfnarpClient.svg)](https://travis-ci.org/johnjohndoe/HalfnarpClient) [![VersionEye](https://www.versioneye.com/user/projects/548851f9746eb5c4a4000273/badge.svg)](https://www.versioneye.com/user/projects/548851f9746eb5c4a4000273)
 
 # Halfnarp Client
 
