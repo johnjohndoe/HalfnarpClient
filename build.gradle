@@ -31,3 +31,13 @@ dependencies {
 }
 
 apply from: 'ci/deploy.gradle'
+
+apply plugin: 'signing'
+
+version = '1.0.0'
+ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
+
+signing {
+    required { isReleaseVersion }
+    sign configurations.archives
+}

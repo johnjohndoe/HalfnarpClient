@@ -1,0 +1,5 @@
+# Rename to gradle.properties to being recognized
+
+signing.keyId=12345678
+signing.password=secret
+signing.secretKeyRingFile=/home/USERNAME/.gnupg/secring.gpg
