@@ -27,7 +27,7 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.5.0'
     compile 'com.squareup.retrofit:converter-jackson:1.8.0'
     compile 'javax.annotation:jsr250-api:1.0'
-    compile 'com.squareup.retrofit:retrofit:1.8.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
 }
 
 apply from: 'ci/deploy.gradle'
