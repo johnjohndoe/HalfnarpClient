@@ -11,6 +11,12 @@ The source code of the API can be found here:
 * https://github.com/tomster/halfnarp
 
 
+## Demo application
+
+Please note there is a Android demo application for this library available:
+
+* https://github.com/johnjohndoe/HalfnarpClientDemo
+
 
 ## Usage
 
