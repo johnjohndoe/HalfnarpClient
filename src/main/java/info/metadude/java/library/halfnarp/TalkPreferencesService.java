@@ -16,24 +16,23 @@ import retrofit.http.Path;
 
 public interface TalkPreferencesService {
 
-    public static final String SERVICE_END_POINT =
-            "http://halfnarp.events.ccc.de";
+    String SERVICE_END_POINT = "http://halfnarp.events.ccc.de";
 
     @GET("/-/talkpreferences")
-    public void getTalks(
+    void getTalks(
             Callback<List<GetTalksResponse>> getTalksResponseCallback);
 
     // TODO: Handle post error response
 
     @POST("/-/talkpreferences")
-    public void createTalkPreferences(
+    void createTalkPreferences(
             @Body TalkIds talkIds,
             Callback<CreateTalkPreferencesSuccessResponse> createTalkPreferencesResponseCallback);
 
     // TODO: Handle update error response
 
     @PUT("/-/talkpreferences/{uniqueId}")
-    public void updateTalkPreferences(
+    void updateTalkPreferences(
             @Path("uniqueId") String uniqueId,
             @Body TalkIds talkIds,
             Callback<UpdateTalkPreferencesSuccessResponse> updateTalkPreferencesResponseCallback);
@@ -41,7 +40,7 @@ public interface TalkPreferencesService {
     // TODO: Handle getTalkPreferences error response
 
     @GET("/-/talkpreferences/{uniqueId}")
-    public void getTalkPreferences(
+    void getTalkPreferences(
             @Path("uniqueId") String uniqueId,
             Callback<GetTalkPreferencesSuccessResponse> getTalkPreferencesResponseCallback);
 
