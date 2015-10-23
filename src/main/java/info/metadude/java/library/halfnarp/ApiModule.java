@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategy;
 import retrofit.RestAdapter;
 import retrofit.converter.JacksonConverter;
 
-public class ApiModule {
+public final class ApiModule {
 
     private static ObjectMapper provideObjectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
