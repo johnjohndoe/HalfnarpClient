@@ -7,7 +7,7 @@ import info.metadude.java.library.halfnarp.model.GetTalkPreferencesSuccessRespon
 import info.metadude.java.library.halfnarp.model.GetTalksResponse;
 import info.metadude.java.library.halfnarp.model.TalkIds;
 import info.metadude.java.library.halfnarp.model.UpdateTalkPreferencesSuccessResponse;
-import retrofit.Callback;
+import retrofit.Call;
 import retrofit.http.Body;
 import retrofit.http.GET;
 import retrofit.http.POST;
@@ -16,32 +16,28 @@ import retrofit.http.Path;
 
 public interface TalkPreferencesService {
 
-    String SERVICE_END_POINT = "http://halfnarp.events.ccc.de";
+    String BASE_URL = "http://halfnarp.events.ccc.de";
 
     @GET("/-/talkpreferences")
-    void getTalks(
-            Callback<List<GetTalksResponse>> getTalksResponseCallback);
+    Call<List<GetTalksResponse>> getTalks();
 
     // TODO: Handle post error response
 
     @POST("/-/talkpreferences")
-    void createTalkPreferences(
-            @Body TalkIds talkIds,
-            Callback<CreateTalkPreferencesSuccessResponse> createTalkPreferencesResponseCallback);
+    Call<CreateTalkPreferencesSuccessResponse> createTalkPreferences(
+            @Body TalkIds talkIds);
 
     // TODO: Handle update error response
 
     @PUT("/-/talkpreferences/{uniqueId}")
-    void updateTalkPreferences(
+    Call<UpdateTalkPreferencesSuccessResponse> updateTalkPreferences(
             @Path("uniqueId") String uniqueId,
-            @Body TalkIds talkIds,
-            Callback<UpdateTalkPreferencesSuccessResponse> updateTalkPreferencesResponseCallback);
+            @Body TalkIds talkIds);
 
     // TODO: Handle getTalkPreferences error response
 
     @GET("/-/talkpreferences/{uniqueId}")
-    void getTalkPreferences(
-            @Path("uniqueId") String uniqueId,
-            Callback<GetTalkPreferencesSuccessResponse> getTalkPreferencesResponseCallback);
+    Call<GetTalkPreferencesSuccessResponse> getTalkPreferences(
+            @Path("uniqueId") String uniqueId);
 
 }
