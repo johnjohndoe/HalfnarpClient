@@ -80,6 +80,9 @@ dependencies {
 }
 ```
 
+## Which applications are using this library?
+
+* Schedule Conflict Resolvr - [Sources][scr-sources], [PlayStore][scr-playstore]
 
 
 ## Author
@@ -104,5 +107,7 @@ dependencies {
 
 
 [tobias-preuss]: https://github.com/johnjohndoe
+[scr-sources]: https://github.com/ligi/SCR
+[scr-playstore]: https://play.google.com/store/apps/details?id=org.ligi.scr
 
 
