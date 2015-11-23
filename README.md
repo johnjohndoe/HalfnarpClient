@@ -26,19 +26,19 @@ The library can be accessed via the `ApiModule` class.
 TalkPreferencesService service = ApiModule.getTalkPreferencesService();
 
 Call<List<GetTalksResponse>> getTalksCall = service.getTalks();
-// Handle getTalks response
+// Execute getTalks call to send a request to the webserver.
 
 Call<CreateTalkPreferencesSuccessResponse> createTalkPreferencesSuccessResponseCall =
                 mService.createTalkPreferences(talkIds);
-// Handle createTalkPreferences response
+// Execute createTalkPreferencesSuccessResponse call to send a request to the webserver.
 
 Call<UpdateTalkPreferencesSuccessResponse> updateTalkPreferencesSuccessResponseCall =
                 mService.updateTalkPreferences(uniqueId, talkIds);
-// Handle updateTalkPreferences response
+// Execute updateTalkPreferencesSuccessResponse call to send a request to the webserver.
 
 Call<GetTalkPreferencesSuccessResponse> getTalkPreferencesSuccessResponseCall =
                 mService.getTalkPreferences(uniqueId);
-// Handle getTalkPreferences response
+// Execute getTalkPreferencesSuccessResponse call to send a request to the webserver.
 ```
 
 Make sure to define the following `packagingOptions` in the  `build.gradle` of you app.
