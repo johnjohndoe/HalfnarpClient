@@ -33,6 +33,7 @@ dependencies {
     compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
     compile 'com.squareup.retrofit:converter-jackson:2.0.0-beta2'
     compile 'com.squareup.okhttp:okhttp:2.6.0'
+    testCompile "junit:junit:4.12"
 }
 
 apply from: 'ci/deploy.gradle'
