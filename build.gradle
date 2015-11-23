@@ -32,6 +32,7 @@ dependencies {
     compile 'javax.annotation:jsr250-api:1.0'
     compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
     compile 'com.squareup.retrofit:converter-jackson:2.0.0-beta2'
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
 }
 
 apply from: 'ci/deploy.gradle'
