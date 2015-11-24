@@ -96,5 +96,3 @@ $RECYCLE.BIN/
 .gradle/
 build/
 .gradletasknamecache
-gradle.properties
-
