@@ -21,4 +21,4 @@ before_script:
   - chmod +x gradlew
 
 script:
-  - ./gradlew clean assemble
+  - ./gradlew clean assemble test

@@ -80,6 +80,14 @@ dependencies {
 }
 ```
 
+## Tests
+
+Run the following command to execute all tests:
+
+```groovy
+$ ./gradlew clean test
+```
+
 ## Which applications are using this library?
 
 * Schedule Conflict Resolvr - [Sources][scr-sources], [PlayStore][scr-playstore]
