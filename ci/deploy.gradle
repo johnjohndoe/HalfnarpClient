@@ -7,9 +7,9 @@ task sourceJar(type: Jar) {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId 'info.metadude.java.library.halfnarp'
-            artifactId 'halfnarp-client'
-            version = "2.1.0"
+            groupId project.groupId
+            artifactId project.artifactId
+            version = project.versionName
 
             from components.java
 
