@@ -9,7 +9,7 @@ publishing {
         mavenJava(MavenPublication) {
             groupId 'info.metadude.java.library.halfnarp'
             artifactId 'halfnarp-client'
-            version = "1.0.0"
+            version = "2.1.0"
 
             from components.java
 
