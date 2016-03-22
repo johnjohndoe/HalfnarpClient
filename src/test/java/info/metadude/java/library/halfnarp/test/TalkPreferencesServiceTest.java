@@ -5,8 +5,8 @@ import info.metadude.java.library.halfnarp.TalkPreferencesService;
 import info.metadude.java.library.halfnarp.model.GetTalksResponse;
 import org.junit.Before;
 import org.junit.Test;
-import retrofit.Call;
-import retrofit.Response;
+import retrofit2.Call;
+import retrofit2.Response;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +28,7 @@ public class TalkPreferencesServiceTest {
         Call<List<GetTalksResponse>> getTalksCall = talkPreferencesService.getTalks();
         try {
             Response<List<GetTalksResponse>> response = getTalksCall.execute();
-            if (response.isSuccess()) {
+            if (response.isSuccessful()) {
                 List<GetTalksResponse> getTalksResponses = response.body();
                 // Expect at least some data
                 assertThat(getTalksResponses)
