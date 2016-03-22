@@ -11,7 +11,8 @@ import retrofit.Response;
 import java.io.IOException;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.fail;
 
 public class TalkPreferencesServiceTest {
 
@@ -30,15 +31,17 @@ public class TalkPreferencesServiceTest {
             if (response.isSuccess()) {
                 List<GetTalksResponse> getTalksResponses = response.body();
                 // Expect at least some data
-                assertNotNull(getTalksResponses);
-                assertTrue(getTalksResponses.size() > 0);
+                assertThat(getTalksResponses)
+                        .isNotNull()
+                        .isNotEmpty();
                 for (GetTalksResponse getTalksResponse : getTalksResponses) {
-                    assertNotNull(getTalksResponse);
+                    assertThat(getTalksResponse).isNotNull();
                     // Event ID
-                    assertTrue(getTalksResponse.getEventId() > 0);
+                    assertThat(getTalksResponse.getEventId()).isGreaterThan(0);
                     // Track name
-                    assertNotNull(getTalksResponse.getTrackName());
-                    assertTrue(getTalksResponse.getTrackName().length() > 0);
+                    assertThat(getTalksResponse.getTrackName())
+                            .isNotNull()
+                            .isNotEmpty();
                 }
             } else {
                 fail("GetTalks response is not successful.");

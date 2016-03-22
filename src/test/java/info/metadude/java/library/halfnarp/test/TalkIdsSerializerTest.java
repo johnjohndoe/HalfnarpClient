@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class TalkIdsSerializerTest {
 
@@ -32,9 +32,10 @@ public class TalkIdsSerializerTest {
     public void testSerialize() throws IOException {
         String jsonizedTalkIds = getSerializedTalkIds(talkIdsSerializer, TALK_IDS);
         // Expect talk IDs as JSON
-        assertNotNull(jsonizedTalkIds);
-        assertTrue(jsonizedTalkIds.length() > 0);
-        assertEquals(jsonizedTalkIds, EXPECTED_TALK_IDS_JSON);
+        assertThat(jsonizedTalkIds)
+                .isNotNull()
+                .isNotEmpty()
+                .isEqualTo(EXPECTED_TALK_IDS_JSON);
     }
 
     private static String getSerializedTalkIds(TalkIdsSerializer talkIdsSerializer, List<Integer> talkIdList)
