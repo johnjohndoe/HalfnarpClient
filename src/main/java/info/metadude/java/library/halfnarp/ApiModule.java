@@ -2,12 +2,9 @@ package info.metadude.java.library.halfnarp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.squareup.okhttp.Interceptor;
-import com.squareup.okhttp.OkHttpClient;
-import retrofit.JacksonConverterFactory;
-import retrofit.Retrofit;
-
-import java.util.List;
+import okhttp3.OkHttpClient;
+import retrofit2.Retrofit;
+import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public final class ApiModule {
 
@@ -15,15 +12,15 @@ public final class ApiModule {
         return getTalkPreferencesService(null);
     }
 
-    public static TalkPreferencesService getTalkPreferencesService(final List<Interceptor> httpClientInterceptors) {
-        return createRetrofit(TalkPreferencesService.BASE_URL, httpClientInterceptors)
+    public static TalkPreferencesService getTalkPreferencesService(final OkHttpClient okHttpClient) {
+        return createRetrofit(TalkPreferencesService.BASE_URL, okHttpClient)
                 .create(TalkPreferencesService.class);
     }
 
-    private static Retrofit createRetrofit(final String baseUrl, final List<Interceptor> httpClientInterceptors) {
-        OkHttpClient httpClient = new OkHttpClient();
-        if (httpClientInterceptors != null) {
-            httpClient.interceptors().addAll(httpClientInterceptors);
+    private static Retrofit createRetrofit(final String baseUrl, final OkHttpClient okHttpClient) {
+        OkHttpClient httpClient = okHttpClient;
+        if (httpClient == null) {
+            httpClient = new OkHttpClient();
         }
 
         return new Retrofit.Builder()

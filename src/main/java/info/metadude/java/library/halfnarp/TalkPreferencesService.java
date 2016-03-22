@@ -1,18 +1,10 @@
 package info.metadude.java.library.halfnarp;
 
-import java.util.List;
+import info.metadude.java.library.halfnarp.model.*;
+import retrofit2.Call;
+import retrofit2.http.*;
 
-import info.metadude.java.library.halfnarp.model.CreateTalkPreferencesSuccessResponse;
-import info.metadude.java.library.halfnarp.model.GetTalkPreferencesSuccessResponse;
-import info.metadude.java.library.halfnarp.model.GetTalksResponse;
-import info.metadude.java.library.halfnarp.model.TalkIds;
-import info.metadude.java.library.halfnarp.model.UpdateTalkPreferencesSuccessResponse;
-import retrofit.Call;
-import retrofit.http.Body;
-import retrofit.http.GET;
-import retrofit.http.POST;
-import retrofit.http.PUT;
-import retrofit.http.Path;
+import java.util.List;
 
 public interface TalkPreferencesService {
 
