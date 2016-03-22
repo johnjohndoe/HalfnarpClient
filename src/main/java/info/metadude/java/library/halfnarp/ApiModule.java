@@ -36,7 +36,7 @@ public final class ApiModule {
     private static ObjectMapper provideObjectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setPropertyNamingStrategy(
-                PropertyNamingStrategy.CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES);
+                PropertyNamingStrategy.SNAKE_CASE);
         return objectMapper;
     }
 
