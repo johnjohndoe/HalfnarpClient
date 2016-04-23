@@ -4,6 +4,7 @@ import info.metadude.java.library.halfnarp.ApiModule;
 import info.metadude.java.library.halfnarp.TalkPreferencesService;
 import info.metadude.java.library.halfnarp.model.GetTalksResponse;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import retrofit2.Call;
 import retrofit2.Response;
@@ -23,6 +24,7 @@ public class TalkPreferencesServiceTest {
         talkPreferencesService = ApiModule.getTalkPreferencesService();
     }
 
+    @Ignore
     @Test
     public void testThatRealServerIsReachable() {
         Call<List<GetTalksResponse>> getTalksCall = talkPreferencesService.getTalks();
