@@ -18,7 +18,7 @@ public class TalkIdsSerializer extends JsonSerializer<TalkIds> {
             throws IOException {
         jsonGenerator.writeStartObject();
         jsonGenerator.writeArrayFieldStart(TalkIds.API_DICTIONARY_KEY);
-        for (Integer talkId : talkIds.getTalkIds()) {
+        for (Integer talkId : talkIds.getSortedTalkIds()) {
             jsonGenerator.writeNumber(talkId);
         }
         jsonGenerator.writeEndArray();

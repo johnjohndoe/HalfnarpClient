@@ -17,9 +17,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class TalkIdsSerializerTest {
 
-    protected final ArrayList<Integer> TALK_IDS = new ArrayList<>(Arrays.asList(5931, 5930));
+    protected final ArrayList<Integer> TALK_IDS = new ArrayList<>(Arrays.asList(5930, 5931));
 
-    protected final static String EXPECTED_TALK_IDS_JSON = "{\"talk_ids\":[5931,5930]}";
+    protected final static String EXPECTED_TALK_IDS_JSON = "{\"talk_ids\":[5930,5931]}";
 
     protected TalkIdsSerializer talkIdsSerializer;
 

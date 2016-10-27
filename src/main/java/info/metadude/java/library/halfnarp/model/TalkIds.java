@@ -3,10 +3,7 @@ package info.metadude.java.library.halfnarp.model;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import info.metadude.java.library.halfnarp.TalkIdsSerializer;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @JsonSerialize(using = TalkIdsSerializer.class)
 public class TalkIds {
@@ -35,8 +32,10 @@ public class TalkIds {
         return mTalkIds.size();
     }
 
-    public Collection<Integer> getTalkIds() {
-        return new ArrayList<>(mTalkIds);
+    public Collection<Integer> getSortedTalkIds() {
+        List<Integer> list = new ArrayList<>(mTalkIds);
+        Collections.sort(list);
+        return list;
     }
 
 }
