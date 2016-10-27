@@ -17,7 +17,7 @@ import static org.junit.Assert.fail;
 
 public class TalkPreferencesServiceTest {
 
-    protected TalkPreferencesService talkPreferencesService;
+    private TalkPreferencesService talkPreferencesService;
 
     @Before
     public void initTalkPreferencesService() {

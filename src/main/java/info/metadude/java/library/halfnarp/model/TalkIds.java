@@ -10,7 +10,7 @@ public class TalkIds {
 
     public static final String API_DICTIONARY_KEY = "talk_ids";
 
-    protected Set<Integer> mTalkIds;
+    private Set<Integer> mTalkIds;
 
     public TalkIds() {
         mTalkIds = new HashSet<>();
