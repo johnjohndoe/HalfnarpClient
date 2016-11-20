@@ -12,8 +12,6 @@ public class GetTalksResponse {
     private int eventId;
     @JsonProperty("track_id")
     private int trackId;
-    @JsonProperty("track_name")
-    private String trackName;
     @JsonProperty("room_id")
     private int roomId;
     @JsonProperty("room_name")
@@ -26,10 +24,10 @@ public class GetTalksResponse {
     private String title;
     @JsonProperty("abstract")
     private String _abstract;
-    @JsonProperty("speakers")
+    @JsonProperty("speaker_names")
     private String speakers;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The eventId
@@ -61,22 +59,6 @@ public class GetTalksResponse {
     @JsonProperty("track_id")
     public void setTrackId(int trackId) {
         this.trackId = trackId;
-    }
-
-    /**
-     * @return The trackName
-     */
-    @JsonProperty("track_name")
-    public String getTrackName() {
-        return trackName;
-    }
-
-    /**
-     * @param trackName The track_name
-     */
-    @JsonProperty("track_name")
-    public void setTrackName(String trackName) {
-        this.trackName = trackName;
     }
 
     /**
@@ -178,7 +160,7 @@ public class GetTalksResponse {
     /**
      * @return The speakers
      */
-    @JsonProperty("speakers")
+    @JsonProperty("speaker_names")
     public String getSpeakers() {
         return speakers;
     }
@@ -186,7 +168,7 @@ public class GetTalksResponse {
     /**
      * @param speakers The speakers
      */
-    @JsonProperty("speakers")
+    @JsonProperty("speaker_names")
     public void setSpeakers(String speakers) {
         this.speakers = speakers;
     }
@@ -205,7 +187,6 @@ public class GetTalksResponse {
     public String toString() {
         return "eventId = " + eventId + ", " +
                 "trackId = " + trackId + ", " +
-                "trackName = " + trackName + ", " +
                 "roomId = " + roomId + ", " +
                 "roomName = " + roomName + ", " +
                 "startTime = " + startTime + ", " +
