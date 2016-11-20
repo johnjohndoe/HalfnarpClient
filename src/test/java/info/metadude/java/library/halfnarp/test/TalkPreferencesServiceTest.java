@@ -24,7 +24,6 @@ public class TalkPreferencesServiceTest {
         talkPreferencesService = ApiModule.getTalkPreferencesService();
     }
 
-    @Ignore
     @Test
     public void testThatRealServerIsReachable() {
         Call<List<GetTalksResponse>> getTalksCall = talkPreferencesService.getTalks();
