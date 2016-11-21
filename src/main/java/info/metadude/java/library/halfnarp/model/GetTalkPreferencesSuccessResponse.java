@@ -15,11 +15,11 @@ import java.util.Map;
 public class GetTalkPreferencesSuccessResponse extends GetTalkPreferencesResponse {
 
     @JsonProperty("talk_ids")
-    private List<Integer> talkIds = new ArrayList<Integer>();
+    private List<Integer> talkIds = new ArrayList<>();
     @JsonProperty("uid")
     private String uid;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The talkIds

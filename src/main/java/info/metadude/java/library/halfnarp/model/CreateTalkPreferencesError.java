@@ -15,7 +15,7 @@ public class CreateTalkPreferencesError {
     @JsonProperty("description")
     private String description;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The location
