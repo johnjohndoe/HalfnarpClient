@@ -1,5 +1,22 @@
 # Halfnarp Client changelog
 
+## [v.3.0.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.3.0.0)
+
+* Published: 2016-11-22
+
+### Changes
+
+* Add deployment configuration.
+* Update base URL which has changed.
+* Parse "hashed_uid" and "public_url" attributes in "CreateTalkPreferencesSuccessResponse".
+* Parse "language" property in "GetTalksResponse".
+* Enable test since server is currently online.
+* Update OkHttp to v.3.4.2.
+* Update Jackson-databind to v.2.8.5.
+* Update assertj-core to v.2.6.0.
+* Reduce Lint warnings.
+
+
 ## [v.2.2.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.2.2.0)
 
 * Published: 2016-11-20
