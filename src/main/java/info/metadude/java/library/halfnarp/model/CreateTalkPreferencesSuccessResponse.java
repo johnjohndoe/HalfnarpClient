@@ -9,12 +9,48 @@ import java.util.Map;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CreateTalkPreferencesSuccessResponse extends CreateResponse {
 
+    @JsonProperty("hashed_uid")
+    private String hashedUid;
+    @JsonProperty("public_url")
+    private String publicUrl;
     @JsonProperty("update_url")
     private String updateUrl;
     @JsonProperty("uid")
     private String uid;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<>();
+
+    /**
+     * @return The hashedUid
+     */
+    @JsonProperty("hashed_uid")
+    public String getHashedUid() {
+        return hashedUid;
+    }
+
+    /**
+     * @param hashedUid The hashed_uid
+     */
+    @JsonProperty("hashed_uid")
+    public void setHashedUid(String hashedUid) {
+        this.hashedUid = hashedUid;
+    }
+
+    /**
+     * @return The publicUrl
+     */
+    @JsonProperty("public_url")
+    public String getPublicUrl() {
+        return publicUrl;
+    }
+
+    /**
+     * @param publicUrl The public_url
+     */
+    @JsonProperty("public_url")
+    public void setPublicUrl(String publicUrl) {
+        this.publicUrl = publicUrl;
+    }
 
     /**
      * @return The updateUrl
@@ -60,7 +96,9 @@ public class CreateTalkPreferencesSuccessResponse extends CreateResponse {
 
     @Override
     public String toString() {
-        return "updateUrl = " + updateUrl + ", " +
+        return "hashedUid = " + hashedUid + ", " +
+                "publicUrl = " + publicUrl + ", " +
+                "updateUrl = " + updateUrl + ", " +
                 "uid = " + uid;
     }
 
