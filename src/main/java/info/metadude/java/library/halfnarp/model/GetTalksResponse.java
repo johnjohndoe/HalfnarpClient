@@ -8,6 +8,8 @@ import java.util.Map;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class GetTalksResponse {
 
+    @JsonProperty("language")
+    private String language;
     @JsonProperty("event_id")
     private int eventId;
     @JsonProperty("track_id")
@@ -28,6 +30,22 @@ public class GetTalksResponse {
     private String speakers;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<>();
+
+    /**
+     * @return The language
+     */
+    @JsonProperty("language")
+    public String getLanguage() {
+        return language;
+    }
+
+    /**
+     * @param language The language
+     */
+    @JsonProperty("language")
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 
     /**
      * @return The eventId
@@ -185,7 +203,8 @@ public class GetTalksResponse {
 
     @Override
     public String toString() {
-        return "eventId = " + eventId + ", " +
+        return "language = " + language + ", " +
+                "eventId = " + eventId + ", " +
                 "trackId = " + trackId + ", " +
                 "roomId = " + roomId + ", " +
                 "roomName = " + roomName + ", " +
