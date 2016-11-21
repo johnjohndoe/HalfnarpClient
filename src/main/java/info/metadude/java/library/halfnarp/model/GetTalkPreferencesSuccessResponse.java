@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class GetTalkPreferencesSuccessResponse extends GetTalkPreferencesResponse {
 

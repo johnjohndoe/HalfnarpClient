@@ -6,6 +6,7 @@ import retrofit2.http.*;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 public interface TalkPreferencesService {
 
     String BASE_URL = "http://halfnarp.events.ccc.de";

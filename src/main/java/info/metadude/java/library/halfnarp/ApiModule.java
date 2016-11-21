@@ -12,7 +12,7 @@ public final class ApiModule {
         return getTalkPreferencesService(null);
     }
 
-    @SuppressWarnings("WeakerAccess")
+    @SuppressWarnings({"WeakerAccess", "SameParameterValue"})
     public static TalkPreferencesService getTalkPreferencesService(final OkHttpClient okHttpClient) {
         return createRetrofit(TalkPreferencesService.BASE_URL, okHttpClient)
                 .create(TalkPreferencesService.class);

@@ -5,6 +5,7 @@ import info.metadude.java.library.halfnarp.TalkIdsSerializer;
 
 import java.util.*;
 
+@SuppressWarnings("unused")
 @JsonSerialize(using = TalkIdsSerializer.class)
 public class TalkIds {
 

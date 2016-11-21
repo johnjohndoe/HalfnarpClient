@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings({"WeakerAccess", "unused"})
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CreateTalkPreferencesError {
 

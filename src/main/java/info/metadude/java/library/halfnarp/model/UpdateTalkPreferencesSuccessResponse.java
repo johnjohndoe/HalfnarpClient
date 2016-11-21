@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class UpdateTalkPreferencesSuccessResponse extends UpdateResponse {
 
     @JsonProperty("uid")
