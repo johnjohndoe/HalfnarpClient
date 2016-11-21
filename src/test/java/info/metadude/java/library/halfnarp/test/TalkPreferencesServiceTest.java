@@ -34,28 +34,7 @@ public class TalkPreferencesServiceTest {
                         .isNotEmpty();
                 for (GetTalksResponse getTalksResponse : getTalksResponses) {
                     assertThat(getTalksResponse).isNotNull();
-                    // Language
-                    assertThat(getTalksResponse.getLanguage())
-                            .isNotNull()
-                            .isNotEmpty();
-                    // Event ID
-                    assertThat(getTalksResponse.getEventId()).isGreaterThan(0);
-                    // Track id
-                    assertThat(getTalksResponse.getTrackId())
-                            .isNotNull();
-                    // Speaker Names
-                    assertThat(getTalksResponse.getSpeakers())
-                            .isNotNull()
-                            .isNotEmpty();
-                    // Title
-                    assertThat(getTalksResponse.getTitle())
-                            .isNotNull()
-                            .isNotEmpty();
-                    // Abstract
-                    assertThat(getTalksResponse.getAbstract())
-                            .isNotNull();
-
-
+                    assertGetTalksResponse(getTalksResponse);
                 }
             } else {
                 fail("GetTalks response is not successful.");
@@ -63,6 +42,29 @@ public class TalkPreferencesServiceTest {
         } catch (IOException e) {
             fail("Should not throw " + e);
         }
+    }
+
+    private void assertGetTalksResponse(GetTalksResponse getTalksResponse) {
+        // Language
+        assertThat(getTalksResponse.getLanguage())
+                .isNotNull()
+                .isNotEmpty();
+        // Event ID
+        assertThat(getTalksResponse.getEventId()).isGreaterThan(0);
+        // Track id
+        assertThat(getTalksResponse.getTrackId())
+                .isNotNull();
+        // Speaker Names
+        assertThat(getTalksResponse.getSpeakers())
+                .isNotNull()
+                .isNotEmpty();
+        // Title
+        assertThat(getTalksResponse.getTitle())
+                .isNotNull()
+                .isNotEmpty();
+        // Abstract
+        assertThat(getTalksResponse.getAbstract())
+                .isNotNull();
     }
 
 }
