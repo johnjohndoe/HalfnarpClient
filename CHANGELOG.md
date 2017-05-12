@@ -1,5 +1,23 @@
 # Halfnarp Client changelog
 
+## [v.4.0.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.0.0)
+
+* Published: 2017-05-12
+
+### Changes
+
+* Base URL must now be injected by the client application. This allows usage for other events.
+* Library now used Java 8.
+* Test "createTalkPreferences" API response.
+* Test "https" in base URL.
+* Allow "language" in "getTalks" API response to be an empty string.
+* Update OkHttp to v.3.7.0.
+* Update jackson-databind to v.2.8.8.1.
+* Update assertj-core to v.2.7.0.
+* Update Gradle wrapper to v.3.5.
+* Reduce Lint warnings.
+
+
 ## [v.3.0.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.3.0.0)
 
 * Published: 2016-11-22
@@ -12,7 +30,7 @@
 * Parse "language" property in "GetTalksResponse".
 * Enable test since server is currently online.
 * Update OkHttp to v.3.4.2.
-* Update Jackson-databind to v.2.8.5.
+* Update jackson-databind to v.2.8.5.
 * Update assertj-core to v.2.6.0.
 * Reduce Lint warnings.
 
