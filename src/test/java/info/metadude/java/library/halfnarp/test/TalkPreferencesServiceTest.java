@@ -47,8 +47,7 @@ public class TalkPreferencesServiceTest {
     private void assertGetTalksResponse(GetTalksResponse getTalksResponse) {
         // Language
         assertThat(getTalksResponse.getLanguage())
-                .isNotNull()
-                .isNotEmpty();
+                .isNotNull();
         // Event ID
         assertThat(getTalksResponse.getEventId()).isGreaterThan(0);
         // Track id
