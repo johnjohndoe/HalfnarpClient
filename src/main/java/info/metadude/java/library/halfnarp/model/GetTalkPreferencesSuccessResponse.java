@@ -20,7 +20,7 @@ public class GetTalkPreferencesSuccessResponse extends GetTalkPreferencesRespons
     @JsonProperty("uid")
     private String uid;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<>();
+    private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The talkIds

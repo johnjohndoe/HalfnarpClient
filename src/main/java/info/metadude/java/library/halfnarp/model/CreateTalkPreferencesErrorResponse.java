@@ -16,7 +16,7 @@ public class CreateTalkPreferencesErrorResponse extends CreateResponse {
     @JsonProperty("errors")
     private List<CreateTalkPreferencesError> errors = new ArrayList<>();
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<>();
+    private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The status

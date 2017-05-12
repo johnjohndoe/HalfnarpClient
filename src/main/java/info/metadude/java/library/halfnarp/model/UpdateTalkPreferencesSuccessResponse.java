@@ -14,7 +14,7 @@ public class UpdateTalkPreferencesSuccessResponse extends UpdateResponse {
     @JsonProperty("uid")
     private String uid;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<>();
+    private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The uid

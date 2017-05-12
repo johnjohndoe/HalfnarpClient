@@ -18,7 +18,7 @@ public class CreateTalkPreferencesSuccessResponse extends CreateResponse {
     @JsonProperty("uid")
     private String uid;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<>();
+    private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The hashedUid

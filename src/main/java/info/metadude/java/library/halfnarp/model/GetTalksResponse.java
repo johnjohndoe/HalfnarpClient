@@ -30,7 +30,7 @@ public class GetTalksResponse {
     @JsonProperty("speaker_names")
     private String speakers;
     @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<>();
+    private final Map<String, Object> additionalProperties = new HashMap<>();
 
     /**
      * @return The language
