@@ -27,6 +27,11 @@ public class TalkPreferencesServiceTest {
     }
 
     @Test
+    public void ensureBaseUrlStartsWithHttps() {
+        assertThat(BASE_URL.startsWith("https://")).isTrue();
+    }
+
+    @Test
     public void testWeCanParseRealResponseOfGetTalks() {
         Call<List<GetTalksResponse>> getTalksCall = talkPreferencesService.getTalks();
         try {
