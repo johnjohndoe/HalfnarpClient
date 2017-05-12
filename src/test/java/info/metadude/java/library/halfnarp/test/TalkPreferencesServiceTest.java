@@ -24,7 +24,7 @@ public class TalkPreferencesServiceTest {
     }
 
     @Test
-    public void testWeCanParseRealCurrentServerData() {
+    public void testWeCanParseRealResponseOfGetTalks() {
         Call<List<GetTalksResponse>> getTalksCall = talkPreferencesService.getTalks();
         try {
             Response<List<GetTalksResponse>> response = getTalksCall.execute();
