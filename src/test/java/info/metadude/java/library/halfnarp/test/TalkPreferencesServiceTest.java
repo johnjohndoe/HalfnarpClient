@@ -14,11 +14,13 @@ import static org.junit.Assert.fail;
 
 public class TalkPreferencesServiceTest {
 
+    private static final String BASE_URL = "https://halfnarp.events.ccc.de";
+
     private TalkPreferencesService talkPreferencesService;
 
     @Before
     public void initTalkPreferencesService() {
-        talkPreferencesService = ApiModule.getTalkPreferencesService();
+        talkPreferencesService = ApiModule.getTalkPreferencesService(BASE_URL);
     }
 
     @Test

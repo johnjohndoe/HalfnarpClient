@@ -9,8 +9,6 @@ import java.util.List;
 @SuppressWarnings("unused")
 public interface TalkPreferencesService {
 
-    String BASE_URL = "https://halfnarp.events.ccc.de";
-
     @GET("/-/talkpreferences")
     Call<List<GetTalksResponse>> getTalks();
 

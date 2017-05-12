@@ -23,7 +23,7 @@ Please note there is a Android demo application for this library available:
 The library can be accessed via the `ApiModule` class.
 
 ```java
-TalkPreferencesService service = ApiModule.getTalkPreferencesService();
+TalkPreferencesService service = ApiModule.getTalkPreferencesService(final String baseUrl);
 
 Call<List<GetTalksResponse>> getTalksCall = service.getTalks();
 // Execute getTalks call to send a request to the webserver.

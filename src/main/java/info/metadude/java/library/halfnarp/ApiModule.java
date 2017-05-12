@@ -8,13 +8,13 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public final class ApiModule {
 
-    public static TalkPreferencesService getTalkPreferencesService() {
-        return getTalkPreferencesService(null);
+    public static TalkPreferencesService getTalkPreferencesService(final String baseUrl) {
+        return getTalkPreferencesService(baseUrl, null);
     }
 
     @SuppressWarnings({"WeakerAccess", "SameParameterValue"})
-    public static TalkPreferencesService getTalkPreferencesService(final OkHttpClient okHttpClient) {
-        return createRetrofit(TalkPreferencesService.BASE_URL, okHttpClient)
+    public static TalkPreferencesService getTalkPreferencesService(final String baseUrl, final OkHttpClient okHttpClient) {
+        return createRetrofit(baseUrl, okHttpClient)
                 .create(TalkPreferencesService.class);
     }
 
