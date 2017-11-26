@@ -1,5 +1,21 @@
 # Halfnarp Client changelog
 
+## [v.4.1.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.1.0)
+
+* Published: 2017-11-26
+
+### Changes
+
+* Use Gradle wrapper v.4.3.1.
+* Use gradle-bintray-plugin v.1.8.0.
+* Use retrofit v.2.3.0.
+* Use okhttp v.3.9.1.
+* Use jackson-databind v.2.9.2.
+* Use assertj-core v.2.8.0.
+* Use gradle-versioneye-plugin v.1.5.0.
+* Use gradle-versions-plugin v.0.17.0.
+
+
 ## [v.4.0.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.0.0)
 
 * Published: 2017-05-12
