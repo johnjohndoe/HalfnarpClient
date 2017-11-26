@@ -1,4 +1,4 @@
-apply plugin: 'maven-publish'
+apply plugin: "maven-publish"
 
 task sourceJar(type: Jar) {
     from sourceSets.main.allJava
@@ -20,14 +20,14 @@ publishing {
 }
 
 
-apply plugin: 'com.jfrog.bintray'
+apply plugin: "com.jfrog.bintray"
 
 bintray {
-    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
-    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    user = project.hasProperty("bintrayUser") ? project.property("bintrayUser") : System.getenv("BINTRAY_USER")
+    key = project.hasProperty("bintrayApiKey") ? project.property("bintrayApiKey") : System.getenv("BINTRAY_API_KEY")
 
-    publications = ['mavenJava']
-    //configurations = ['archives']
+    publications = ["mavenJava"]
+    //configurations = ["archives"]
 
     dryRun = false // Whether to run this as dry-run, without deploying
     publish = false // If version should be auto published after an upload
@@ -50,24 +50,24 @@ bintray {
             released = new Date()
             vcsTag = project.versionVcsTag
             // Optional version-level attributes
-            // attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
+            // attributes = ["gradle-plugin": "com.use.less:com.use.less.gradle:gradle-useless-plugin"]
 
             // Optional configuration for GPG signing
             gpg {
                 sign = false // Determines whether to GPG sign the files. The default is false
-                passphrase = project.hasProperty('gpgPassword') ? project.property('gpgPassword') : ''
+                passphrase = project.hasProperty("gpgPassword") ? project.property("gpgPassword") : ""
             }
 
             // Optional configuration for Maven Central sync of the version
             mavenCentralSync {
                 // Optional (true by default). Determines whether to sync the version to Maven Central.
                 sync = false
-                user = 'userToken'
-                password = 'password'
+                user = "userToken"
+                password = "password"
                 // Optional property. By default the staging repository is closed and
                 // artifacts are released to Maven Central. You can optionally turn
                 // this behaviour off (by puting 0 as value) and release the version manually.
-                close = '1'
+                close = "1"
             }
         }
     }

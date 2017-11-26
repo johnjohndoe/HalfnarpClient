@@ -18,9 +18,9 @@ allprojects {
     }
 }
 
-apply plugin: 'java'
-apply plugin: 'org.standardout.versioneye'
-apply plugin: 'com.github.ben-manes.versions'
+apply plugin: "java"
+apply plugin: "org.standardout.versioneye"
+apply plugin: "com.github.ben-manes.versions"
 
 archivesBaseName = "${artifactId}-${versionName}"
 
@@ -53,4 +53,4 @@ tasks.withType(Test) {
     }
 }
 
-apply from: 'ci/deploy.gradle'
+apply from: "ci/deploy.gradle"
