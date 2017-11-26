@@ -46,8 +46,8 @@ Make sure to define the following `packagingOptions` in the  `build.gradle` of y
 
 ```groovy
 packagingOptions {
-    pickFirst 'META-INF/LICENSE'
-    pickFirst 'META-INF/NOTICE'
+    pickFirst "META-INF/LICENSE"
+    pickFirst "META-INF/NOTICE"
 }
 ```
 
