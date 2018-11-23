@@ -90,6 +90,9 @@ public class TalkPreferencesServiceTest {
         // Abstract
         assertThat(getTalksResponse.getAbstract())
                 .isNotNull();
+        // Event classifiers
+        assertThat(getTalksResponse.getEventClassifiers())
+                .isNotNull();
     }
 
     private void assertCreateTalkPreferencesSuccessResponse(CreateTalkPreferencesSuccessResponse response) {

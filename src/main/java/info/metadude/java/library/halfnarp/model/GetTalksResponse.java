@@ -29,6 +29,8 @@ public class GetTalksResponse {
     private String _abstract;
     @JsonProperty("speaker_names")
     private String speakers;
+    @JsonProperty("event_classifiers")
+    private EventClassifiers eventClassifiers;
     @JsonIgnore
     private final Map<String, Object> additionalProperties = new HashMap<>();
 
@@ -192,6 +194,22 @@ public class GetTalksResponse {
         this.speakers = speakers;
     }
 
+    /**
+     * @return The event classifiers
+     */
+    @JsonProperty("event_classifiers")
+    public EventClassifiers getEventClassifiers() {
+        return eventClassifiers;
+    }
+
+    /**
+     * @param eventClassifiers The event classifiers
+     */
+    @JsonProperty("event_classifiers")
+    public void setEventClassifiers(EventClassifiers eventClassifiers) {
+        this.eventClassifiers = eventClassifiers;
+    }
+
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
@@ -213,6 +231,7 @@ public class GetTalksResponse {
                 "duration = " + duration + ", " +
                 "title = " + title + ", " +
                 "_abstract = " + _abstract + ", " +
-                "speakers = " + speakers;
+                "speakers = " + speakers + ", " +
+                "eventClassifiers = " + eventClassifiers;
     }
 }
