@@ -8,6 +8,17 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Model for successful update talk response.
+ *
+ * JSON example:
+ *
+ * {
+ *     "hashed_uid": "123456abcdef",
+ *     "uid": "123456abcdef"
+ * }
+ *
+ */
 @SuppressWarnings("unused")
 public class UpdateTalkPreferencesSuccessResponse extends UpdateResponse {
 

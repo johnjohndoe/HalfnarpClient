@@ -5,6 +5,19 @@ import com.fasterxml.jackson.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Model for a successful create talk response.
+ *
+ * JSON example:
+ *
+ * {
+ *     "public_url": "http://halfnarp.events.ccc.de/-/talkpreferences/public/a1b2c3d4e5",
+ *     "update_url": "http://halfnarp.events.ccc.de/-/talkpreferences/123456abcdef",
+ *     "hashed_uid": "a1b2c3d4e5",
+ *     "uid": "123456abcdef"
+ * }
+ *
+ */
 @SuppressWarnings("unused")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class CreateTalkPreferencesSuccessResponse extends CreateResponse {

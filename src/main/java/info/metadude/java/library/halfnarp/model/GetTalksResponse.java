@@ -5,6 +5,31 @@ import com.fasterxml.jackson.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Model for a successful talk response.
+ *
+ * Minimum JSON example with one array entry:
+ *
+ * [
+ *    {
+ *         "abstract": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+ *         "event_classifiers": {
+ *             "Theory - Practice": 100,
+ *             "Science": 75,
+ *             "Novelty": 75
+ *         },
+ *         "event_id": 9370,
+ *         "duration": 3600,
+ *         "language": "en",
+ *         "room_id": null,
+ *         "start_time": null,
+ *         "speaker_names": "John Doe",
+ *         "title": "Lorem ipsum title",
+ *         "track_id": 342
+ *    }
+ * ]
+ *
+ */
 @SuppressWarnings("unused")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class GetTalksResponse {

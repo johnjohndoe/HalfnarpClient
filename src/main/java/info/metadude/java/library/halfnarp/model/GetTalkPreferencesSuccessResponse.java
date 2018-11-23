@@ -11,6 +11,22 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Model for successful get talk preferences response.
+ *
+ * JSON example:
+ *
+ * {
+ *     "hashed_uid": "123456abcdef",
+ *     "public_url": "http://halfnarp.events.ccc.de/-/talkpreferences/public/123456abcdef",
+ *     "talk_ids": [
+ *         5931,
+ *         5930
+ *     ],
+ *     "uid": "123456abcdef"
+ * }
+ *
+ */
 @SuppressWarnings("unused")
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class GetTalkPreferencesSuccessResponse extends GetTalkPreferencesResponse {
