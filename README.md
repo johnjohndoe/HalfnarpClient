@@ -77,7 +77,7 @@ and to your application module `build.gradle`:
 
 ```groovy
 dependencies {
-    compile "info.metadude.java.library.halfnarp:halfnarp-client:$version"
+    implementation "info.metadude.java.library.halfnarp:halfnarp-client:$version"
 }
 ```
 
