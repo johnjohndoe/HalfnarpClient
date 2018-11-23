@@ -1,5 +1,23 @@
 # Halfnarp Client changelog
 
+## [v.4.2.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.2.0)
+
+* Published: 2018-11-23
+
+### Changes
+
+* Provide JSON example for successful responses.
+* Extend GetTalksResponse with "event_classifiers" property.
+* Use retrofit v.2.5.0.
+* Use okhttp v.3.12.0.
+* Use assertj-core v.3.11.1.
+* Use jackson-databind v.2.9.7.
+* Use gradle-bintray-plugin v.1.8.4.
+* Use gradle-versions-plugin v.0.20.0.
+* Use Gradle wrapper v.4.10.2.
+* RIP VersionEye.
+
+
 ## [v.4.1.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.1.0)
 
 * Published: 2017-11-26
