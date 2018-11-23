@@ -24,7 +24,7 @@ public class TalkIdsSerializerTest {
     private TalkIdsSerializer talkIdsSerializer;
 
     @Before
-    public void setup() throws IOException {
+    public void setup() {
         talkIdsSerializer = new TalkIdsSerializer();
     }
 
