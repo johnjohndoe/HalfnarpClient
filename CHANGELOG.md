@@ -1,5 +1,20 @@
 # Halfnarp Client changelog
 
+## [v.4.3.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.3.0)
+
+* Published: 2019-11-14
+
+### Changes
+
+* Use okhttp v.3.12.5.
+* Use retrofit v.2.6.2.
+* Use jackson-databind v.2.10.1.
+* Use assertj-core v.3.14.0.
+* Use Gradle wrapper v.5.6.4.
+* Use gradle-versions-plugin v.0.27.0.
+* Fix GET "talkpreferences" response - "abstract" can be null.
+* Fix Travis CI build.
+
 ## [v.4.2.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.2.0)
 
 * Published: 2018-11-23
