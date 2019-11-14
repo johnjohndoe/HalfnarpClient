@@ -87,9 +87,6 @@ public class TalkPreferencesServiceTest {
         assertThat(getTalksResponse.getTitle())
                 .isNotNull()
                 .isNotEmpty();
-        // Abstract
-        assertThat(getTalksResponse.getAbstract())
-                .isNotNull();
         // Event classifiers
         assertThat(getTalksResponse.getEventClassifiers())
                 .isNotNull();
