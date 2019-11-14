@@ -8,6 +8,8 @@ import java.util.Map;
 /**
  * Model for a successful talk response.
  *
+ * - abstract can be null
+ *
  * Minimum JSON example with one array entry:
  *
  * [
@@ -188,7 +190,7 @@ public class GetTalksResponse {
     }
 
     /**
-     * @return The _abstract
+     * @return The _abstract; can be null
      */
     @JsonProperty("abstract")
     public String getAbstract() {
