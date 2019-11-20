@@ -81,8 +81,7 @@ public class TalkPreferencesServiceTest {
                 .isNotNull();
         // Speaker Names
         assertThat(getTalksResponse.getSpeakers())
-                .isNotNull()
-                .isNotEmpty();
+                .isNotNull();
         // Title
         assertThat(getTalksResponse.getTitle())
                 .isNotNull()
