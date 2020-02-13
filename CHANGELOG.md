@@ -1,5 +1,13 @@
 # Halfnarp Client changelog
 
+## NEXT
+
+* Not release yet
+
+### Changes
+
+* Fix GET "talkpreferences" test - "speakers" might not be assigned to each talk.
+
 ## [v.4.3.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.3.0)
 
 * Published: 2019-11-14
