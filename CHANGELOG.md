@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use okhttp v.3.12.8.
 * Use assertj-core v.3.15.0.
 * Use junit v.4.13.
 * Fix GET "talkpreferences" test - "speakers" might not be assigned to each talk.
