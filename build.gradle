@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.github.ben-manes:gradle-versions-plugin:0.27.0"
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.33.0"
         classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4"
     }
 }
@@ -21,6 +21,7 @@ allprojects {
 
 apply plugin: "java"
 apply plugin: "com.github.ben-manes.versions"
+apply from: "gradle/versions.gradle"
 
 archivesBaseName = "${artifactId}-${versionName}"
 
