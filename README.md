@@ -5,7 +5,6 @@
 A Java library containing a parser and models for the Halfnarp API available here:
 
 * http://halfnarp.events.ccc.de/-/talkpreferences
-* http://halfnarp.sha2017.org/-/talkpreferences
 
 The source code of the API can be found here:
 
