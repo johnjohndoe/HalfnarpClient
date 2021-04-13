@@ -37,7 +37,7 @@ dependencies {
     compile "com.squareup.okhttp3:okhttp:3.12.12"
 
     testCompile "junit:junit:4.13.2"
-    testCompile "org.assertj:assertj-core:3.18.0"
+    testCompile "org.assertj:assertj-core:3.19.0"
 }
 
 tasks.withType(Test) {
