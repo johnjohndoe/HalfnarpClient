@@ -6,7 +6,7 @@
 
 ### Changes
 
-* Use jackson-databind v.2.11.3.
+* Use jackson-databind v.2.12.3.
 * Use retrofit v.2.6.4.
 * Use okhttp v.3.12.13.
 * Use assertj-core v.3.19.0.
