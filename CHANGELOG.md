@@ -10,7 +10,7 @@
 * Use retrofit v.2.6.4.
 * Use okhttp v.3.12.12.
 * Use assertj-core v.3.18.0.
-* Use junit v.4.13.1.
+* Use junit v.4.13.2.
 * Fix GET "talkpreferences" test - "speakers" might not be assigned to each talk.
 
 ## [v.4.3.0](https://github.com/johnjohndoe/HalfnarpClient/releases/tag/v.4.3.0)
