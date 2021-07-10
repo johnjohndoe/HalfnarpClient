@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/johnjohndoe/HalfnarpClient.svg)](https://travis-ci.org/johnjohndoe/HalfnarpClient) [![Download](https://api.bintray.com/packages/tbsprs/maven/HalfnarpClient/images/download.svg)](https://bintray.com/tbsprs/maven/HalfnarpClient/_latestVersion) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/) [![Known Vulnerabilities](https://snyk.io/test/github/johnjohndoe/halfnarpclient/badge.svg?targetFile=build.gradle)](https://snyk.io/test/github/johnjohndoe/halfnarpclient?targetFile=build.gradle)
+[![Build Status](https://travis-ci.org/johnjohndoe/HalfnarpClient.svg)](https://travis-ci.org/johnjohndoe/HalfnarpClient) [![Apache License](http://img.shields.io/badge/license-Apache%20License%202.0-lightgrey.svg)](http://choosealicense.com/licenses/apache-2.0/) [![Known Vulnerabilities](https://snyk.io/test/github/johnjohndoe/halfnarpclient/badge.svg?targetFile=build.gradle)](https://snyk.io/test/github/johnjohndoe/halfnarpclient?targetFile=build.gradle)
 
 # Halfnarp Client
 
