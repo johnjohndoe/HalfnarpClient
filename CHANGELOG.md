@@ -6,10 +6,10 @@
 
 ### Changes
 
+* Use assertj-core v.3.20.2.
 * Use jackson-databind v.2.12.3.
 * Use retrofit v.2.6.4.
 * Use okhttp v.3.12.13.
-* Use assertj-core v.3.19.0.
 * Use junit v.4.13.2.
 * Fix GET "talkpreferences" test - "speakers" might not be assigned to each talk.
 
