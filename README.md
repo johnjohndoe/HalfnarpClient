@@ -65,7 +65,6 @@ your top level `build.gradle`:
 ```
 allprojects {
     repositories {
-        jcenter()
         mavenLocal()
     }
 }
