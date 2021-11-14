@@ -30,7 +30,7 @@ compileJava {
 }
 
 dependencies {
-    compile "com.fasterxml.jackson.core:jackson-databind:2.12.5"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.13.0"
     compile "com.squareup.retrofit2:retrofit:2.6.4"
     compile "com.squareup.retrofit2:converter-jackson:2.6.4"
     compile "com.squareup.okhttp3:okhttp:3.12.13"
