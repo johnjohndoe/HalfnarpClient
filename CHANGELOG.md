@@ -6,6 +6,7 @@
 
 ### Changes
 
+* Use Gradle wrapper v.7.3.
 * Use jackson-databind v.2.13.0.
 * Use assertj-core v.3.20.2.
 * Use retrofit v.2.6.4.
