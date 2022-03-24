@@ -1,7 +1,7 @@
 package info.metadude.java.library.halfnarp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
@@ -34,7 +34,7 @@ public final class ApiModule {
     private static ObjectMapper provideObjectMapper() {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.setPropertyNamingStrategy(
-                PropertyNamingStrategy.SNAKE_CASE);
+                PropertyNamingStrategies.SNAKE_CASE);
         return objectMapper;
     }
 
